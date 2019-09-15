@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block content %}
+	<article class="media content-section">
+		<div class="media-body">
+			<h3 class="article-title">The weather in {{ cityname }}</h3>
+			<div class="article-content">
+				{% if current_weather['status'] %}
+					<p>{{ current_weather['main'] }}</p>
+					<p>Temperature: {{ current_weather['temp'] }} °C</p>
+					<p>Pressure: {{ current_weather['pressure'] }} hpa</p>
+					<p>Humidity: {{ current_weather['humidity'] }} %</p>
+					<p>Wind: {{ current_weather['wind'] }} m/h</p>
+				{% endif %}
+			</div>
+		</div>
+	</article>
+{% endblock content %}
