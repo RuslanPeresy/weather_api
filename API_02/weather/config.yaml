@@ -1,0 +1,4 @@
+# default configuration file
+
+url: 'http://api.openweathermap.org/data/2.5/weather'
+params: {'q': 'London', 'APPID': 'ec191befe6624ab05ccbd9825e0ee1d4'}
