@@ -10,7 +10,7 @@ async def index(request):
 	timeout = 1
 	
 	with Session() as s:
-		req = Request('GET', url, params=params)
+		req = Request('POST', url, params=params)
 
 		prepped = s.prepare_request(req)
 
