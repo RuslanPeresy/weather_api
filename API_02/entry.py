@@ -4,6 +4,8 @@ import aiohttp
 from weather import create_app
 from weather.settings import load_config
 
+#some changes
+
 try:
 	import uvloop
 	asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
