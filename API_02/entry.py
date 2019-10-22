@@ -6,6 +6,8 @@ from weather.settings import load_config
 #something important
 #something more impourtant
 
+#some changes
+
 try:
 	import uvloop
 	asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
